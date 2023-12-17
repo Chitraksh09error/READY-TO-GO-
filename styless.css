@@ -1,0 +1,225 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+body {
+    /* background-image: url('istockphoto-1142802668-2048x2048.jpg'); */
+    background-color:#eff3f6;
+
+    margin: 0;
+    padding: 0;
+   
+    opacity: 0;
+    animation: fadeIn .5s ease-in-out forwards;
+
+}
+header{
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    flex-wrap: wrap;
+    background:#126f77;
+    
+}
+.logo {
+    font-size: 2.5em;
+    color: #fff;
+    user-select: none; 
+    
+    
+}
+.nav-menu{
+    display: flex;
+    text-decoration: none;align-items: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #aad6ec;
+    text-decoration: none;
+    font-weight:500;
+    margin-left: 40px;
+
+
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    left: 0;
+    bottom: -6px;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s; 
+}
+.navigation a:hover:after{
+    transform: scaleX(1);
+    transform-origin: left;
+
+}
+.navigation .button-logpop{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color:#fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .4s;
+}
+.navigation .button-logpop:hover{
+    background: #fff;
+    color:#162938 ;
+}
+
+.line{
+    top: 100px;
+}
+
+.links:hover {
+    /* font-size: large;; */
+    color: #E73493 !important   ;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.logo{
+    font-size: 40px;
+}
+.liks{
+    text-decoration: none;
+}
+
+
+section {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fcfeff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+section:hover {
+    border-radius: 30px;
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f2f2f2;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+h3 {
+    color: #555;
+    transition: color 0.3s ease-in-out;
+}
+
+h3:hover {
+    color: #333;
+}
+
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+.c{ padding-left: 80px;
+    float: left;
+    display: flex;
+    width: 13.33%;
+    justify-content: space-around;
+    margin-bottom: 25px;
+
+}
+.i{
+    height: 50px;
+}
+
+.box{
+    color:#1b4584;
+    font-family:"Poppins" , sans-serif;
+
+}
+.icon{
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.icon ion-icon{
+    margin-right: 5px;
+    font-size: 40px;
+    color: #1b4584;
+    transition: ease .3s;
+}
+.icon ion-icon:hover{
+    font-size: 50px;
+
+}
+.map{
+    
+    overflow: hidden;
+    border-radius: 5px;
+}
+.map img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
